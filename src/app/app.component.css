@@ -1,0 +1,108 @@
+/* Fondo beige */
+body {
+    background: #f5f5dc; /* Color beige */
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 60px;
+    color: #5a3e36;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  /* Título */
+  h1 {
+    color: #d49ca3;
+    font-size: 2.8em;
+    margin-bottom: 25px;
+  }
+  
+  /* Contenido centrado */
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+  
+  /* Centro completo */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Estilo del botón */
+  button {
+    background-color: #f7d6d0;
+    color: #5a3e36;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Efecto hover en el botón */
+  button:hover {
+    background-color: #f3c2ba;
+    transform: scale(1.05);
+  }
+  
+  /* Fondo con patrón elegante */
+  .background-image {
+    background-image: url('https://images.unsplash.com/photo-1558244402-286dd748c593?q=80&w=1000'); /* Imagen de flores de Unsplash */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Estilos para el mensaje */
+  .mensaje-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 240, 245, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .mensaje {
+    font-size: 1.4em;
+    color: #d4717e;
+    margin: 0;
+  }
+  
+  /* Imagen del mensaje */
+  .imagen-container {
+    margin-top: 20px;
+  }
+  
+  .mensaje-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Animación para el mensaje */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
